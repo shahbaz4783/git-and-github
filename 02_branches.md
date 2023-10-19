@@ -49,4 +49,37 @@ This will create a new branch named `darkmode`
   ```
 
 
+### View More Info About Branch
 
+```bash
+git branch -v
+```
+
+This will show:
+- lastest commit
+- hash
+- branch name
+
+
+## Deleting a branch
+
+To detete a branch:
+
+```bash
+git branch -D <branch-name>
+```
+
+> If the branch is not merged, it will show an error, to solve it, use `-D` which is equivalent to `--force`
+
+> Make sure you are not in that branch, otherwise it'll will show an error.
+
+
+### Renaming a branch
+
+We need to have on same branch which we want to rename.
+
+For example, to rename darkmode to darktheme, run:
+
+```bash
+git branch -m darktheme
+```
