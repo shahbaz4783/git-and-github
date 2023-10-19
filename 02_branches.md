@@ -37,3 +37,16 @@ This will create a new branch named `darkmode`
   ```
 
   This will swith branch from main to darkmode.
+
+  > Another way to switch branches (old school)
+  ```bash
+  git checkout darkmode
+  ```
+
+- Creating and Switching branch
+  ```bash
+  git switch -c <branch-name>
+  ```
+
+
+
