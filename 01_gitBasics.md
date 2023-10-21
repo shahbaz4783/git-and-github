@@ -48,3 +48,10 @@ folderName/
 ```
 
 > *.log will ignore all the files that will end with .log
+
+
+## VIM
+
+Press `I` for insert mode
+Press `Escape` for escaping insert mode
+Write `:wq` to save changes
