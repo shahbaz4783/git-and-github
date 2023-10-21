@@ -19,6 +19,11 @@ To Commit changes
 git commit -m 'Your Commit Message'
 ```
 
+To add and commit on same time
+```bash
+git commit -am 'Your commit message'
+```
+
 ### Atomic Commit
 
 When possible, a commit should encompass a single feature, change or fix.
