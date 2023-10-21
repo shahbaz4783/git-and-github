@@ -15,5 +15,4 @@
   ```bash
   git merge darktheme
   ```
-
   
