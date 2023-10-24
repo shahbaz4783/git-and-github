@@ -102,4 +102,16 @@ Suppose you've just made a couple of commits on the master branch, but you actua
 git reset <commit-hash> 
 ```
 
-> It will reset the repo back to a specific commit.  The commits are gone
+> It will reset the repo back to a specific commit.  The commits are gone but changes will not.
+
+
+If you want to undo both the commits AND the actual changes in your files, you can use the --hard option.
+
+```bash
+git reset --hard <commit-hash>
+```
+
+```bash
+git reset --hard HEAD~1
+```
+
