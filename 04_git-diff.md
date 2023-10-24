@@ -53,8 +53,14 @@ git diff branch1..branch2
 
 ### Comparing Commits
 
-We can list the changes between two commits.
+We can list the changes between two commits by providing hashes of commits.
 
 ```bash
 git diff commit1..commit2
+```
+
+Another way
+
+```bash
+git diff HEAD HEAD~1
 ```
