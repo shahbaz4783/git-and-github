@@ -27,3 +27,17 @@ git stash apply
 
 ### Multiple Stashes
 
+We can stash multiple times.
+
+#### To get the list of all  stashes, run:
+
+```bash
+git stash list
+```
+
+
+#### To apply specific stashes, run:
+
+```bash
+git stash apply stash@{2}
+```
