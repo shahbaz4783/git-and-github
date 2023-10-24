@@ -43,3 +43,18 @@ git checkout HEAD~3
 ```bash
 git switch -
 ```
+
+
+### Discarding Changes with git checkout
+
+To revert the file back to whatever it looked like in last commit, use:
+
+```bash
+git checkout HEAD <filename>
+```
+
+> Shorter option to revert a file
+
+```bash
+git checkout -- <filename>
+```
