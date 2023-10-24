@@ -26,3 +26,20 @@ When we checkout a particular commit, HEAD points at that commit rather than at 
   git switch -c newBranch
   ```
 
+
+### Going back with HEAD
+
+#### To go back one commit back 
+```bash
+git checkout HEAD~1
+```
+
+#### To go back three commit back 
+```bash
+git checkout HEAD~3
+```
+
+#### To come back on last commit on particular branch
+```bash
+git switch -
+```
