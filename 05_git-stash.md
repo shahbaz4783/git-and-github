@@ -29,15 +29,30 @@ git stash apply
 
 We can stash multiple times.
 
-#### To get the list of all  stashes, run:
+#### To get the list of all  stashes
 
 ```bash
 git stash list
 ```
 
 
-#### To apply specific stashes, run:
+#### To apply specific stashes
 
 ```bash
 git stash apply stash@{2}
+```
+
+
+
+#### To delete specific stashes
+
+```bash
+git stash drop stash@{2}
+```
+
+
+#### To delete all stashes
+
+```bash
+git stash clear
 ```
