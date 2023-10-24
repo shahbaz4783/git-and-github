@@ -115,3 +115,13 @@ git reset --hard <commit-hash>
 git reset --hard HEAD~1
 ```
 
+
+## Revert
+
+`git revert` is similar to git reset in that they both "undo" changes, but they accomplish it in different ways.
+
+git revert creates a brand new commit which reverses/undos the changes from a commit. Because it results in a new commit, you will be prompted to enter a commit message.
+
+```bash
+git revert <commit-hash>
+```
