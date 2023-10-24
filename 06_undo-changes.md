@@ -58,3 +58,29 @@ git checkout HEAD <filename>
 ```bash
 git checkout -- <filename>
 ```
+
+
+## Restore
+
+`git restore` was introduced alongside git switch as alternatives to some of the uses for checkout.
+
+
+
+### Unmodifying Files with Restore
+
+To restore the file to the contents in the HEAD, 
+use:
+
+```bash
+git restore <filename>
+```
+
+> This is alternate for `git checkout HEAD <filename>` command
+
+
+
+```bash
+git restore --source HEAD~1 home.html
+```
+
+This will restore the contents of home.html to its state from the commit prior to HEAD.  You can also use a particular commit hash as the source.
