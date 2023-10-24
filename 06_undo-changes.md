@@ -64,14 +64,6 @@ git checkout -- <filename>
 
 `git restore` was introduced alongside git switch as alternatives to some of the uses for checkout.
 
-Suppose you've just made a couple of commits on the master branch, but you actually meant to make them on a separate branch instead.  To undo those commits, you can use git reset.
-
-```bash
-git reset <commit-hash> 
-```
-
-> It will reset the repo back to a specific commit.  The commits are gone
-
 
 ### Unmodifying Files with Restore
 
@@ -100,3 +92,14 @@ To unstage a particular file use:
 ```bash
 git restore --staged apikey.txt
 ```
+
+
+## Reset
+
+Suppose you've just made a couple of commits on the master branch, but you actually meant to make them on a separate branch instead.  To undo those commits, you can use git reset.
+
+```bash
+git reset <commit-hash> 
+```
+
+> It will reset the repo back to a specific commit.  The commits are gone
