@@ -24,3 +24,39 @@ git switch <remote-branch-name>
 
 > Providing the same branch name to the git checkout command will create that remote branch locally.
 
+
+
+## Fetching
+
+Fetching allows us to download changes from a remote repository, BUT those changes will not be automatically integrated into our working files. 
+
+It lets you see what others have been working on, without having to merge those changes into your local repo.
+
+```bash
+git fetch <remote>
+```
+> It will fetch all changes from the origin remote repository.
+
+
+```bash
+git fetch
+```
+> If we only pass this command, it will fetch everything from remote repo.
+
+
+We can also fetch a specific branch from a remote
+```bash
+git fetch <remote> <branch>
+```
+
+For example, to fetch darktheme branch, run:
+
+```bash
+git fetch origin darktheme
+```
+
+I now have those changes on my machine, but if I want to see them, run:
+
+```bash
+git checkout origin/darktheme  
+```
