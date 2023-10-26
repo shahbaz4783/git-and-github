@@ -64,3 +64,57 @@ git remote rename <old> <new>
 ```bash
 git remote remove <name>
 ```
+
+
+## Pushing
+
+We need to specify the remote we want to push up to AND the specific local branch we want to push up to that remote.
+
+```bash
+git push <remote> <branch>
+```
+
+For exmaple, git push origin main tells git to push up the master branch to our origin remote.
+
+```bash
+git push origin main
+```
+
+
+### local and remote pushing
+
+We can push a local branch in different remote branch too.
+
+```bash
+git push <remote> <local-branch>:<remote-branch>
+```
+
+For example, to push local `newFeature` branch to remote `darkTheme` branch:
+
+```bash
+git push origin newFeature:darkTheme
+```
+
+
+### Upstream
+
+The `-u` option allows us to set upstream of the branch we are pushing.
+Its like connecting local branch to a branch on github.
+
+```bash
+git push -u <remote> <branch>
+```
+
+Once we have set the upstream for a branch, we can use the `git push` shorthand which will push our current branch to the upstream.
+
+We can do it for any branch.
+
+For example, to make `main` branch upstream:
+```bash
+git push -u origin main
+```
+
+For example, to make `darktheme` branch upstream:
+```bash
+git push -u origin darktheme
+```
