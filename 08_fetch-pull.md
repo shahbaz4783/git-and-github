@@ -60,3 +60,32 @@ I now have those changes on my machine, but if I want to see them, run:
 ```bash
 git checkout origin/darktheme  
 ```
+
+
+
+## Pulling
+
+`git pull` is used to retrieve changes from a remote repository.  Unlike fetch, pull actually updates our HEAD branch with whatever changes are retrieved from the remote.
+
+
+> git pull =  git fetch + git merge
+
+
+```bash
+git pull <remote> <branch>
+```
+
+
+```bash
+git pull origin main 
+```
+
+It will fetch the latest information from the origin's main branch and merge those changes into our current branch.
+
+### Smaller syntax
+
+If we run `git pull` without specifying a particular remote or branch to pull from, git assumes the following:
+
+- remote will default to origin
+- branch will default to whatever tracking
+- connection is configured for your current branch.
