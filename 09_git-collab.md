@@ -86,3 +86,52 @@ git switch main
 git merge my-new-feature
 git push origin main
 ```
+
+
+## Forking
+
+Github allow us to create personal copies of other peoples repositories.  We call those copies a "fork" of the original.  
+
+When we fork a repo, we're basically asking Github "Make me my own copy of this repo please"
+
+
+### Now What?
+
+Now that I've forked, I have my very own copy of the repo where I can do whatever I want! 
+
+I can clone my fork and make changes, add features, and break things without fear of disturbing the original repository.
+
+If I do want to share my work, I can make a pull request from my fork to the original repo.
+
+### Contrtibuting to a repo
+
+1. I fork the original project repo on Github
+   
+2. I clone my fork to my local machine
+   
+3. I add a remote pointing to the original project repo. This remote is often named upstream.
+   ```bash
+   git remote add upstream <link-of-original-repo>
+   ```
+   
+4. I make changes and add/commit on a feature branch on my local machine
+   
+5. I push up my new feature branch to my forked repo (usually called origin)
+   
+6. I open a pull request to the original project repo containing the new work on my forked repo
+
+7. Hopefully the pull request is accepted and my changes are merged in!
+
+> To pull latest changes from original branch:
+```bash
+git pull upstream main
+```
+
+#### Summary of Contributing
+
+- FORK THE PROJECT
+- CLONE THE FORK
+- ADD UPSTREAM REMOTE
+- DO SOME WORK
+- PUSH TO ORIGIN
+- OPEN PR
