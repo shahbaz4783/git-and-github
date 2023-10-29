@@ -64,3 +64,7 @@ VS CODE
 ```bash
 git config --global core.editor "code --wait"
 ```
+
+
+## Configure git name and email
+
