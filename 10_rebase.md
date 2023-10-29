@@ -23,3 +23,33 @@ We get a much cleaner project history.  No unnecessary merge commits!  We end up
 
 Never rebase commits that have been shared with others.  If you have already pushed commits up to Github...DO NOT rebase them unless you are positive no one on the team is using those commits.
 
+
+
+## Rewriting History
+
+Sometimes we want to rewrite, delete, rename, or even reorder commits (before sharing them)
+We can do this using git rebase!
+
+
+Running `git rebase` with the `-i` option will enter the interactive mode, which allows us to edit commits, add files, drop commits, etc.  Note that we need to specify how far back we want to rewrite commits.
+
+```bash
+git rebase -i HEAD~4
+```
+
+> This will take last 4 commits into interactive mode.
+
+
+In our text editor, we'll see a list of commits alongside a list of commands that we can choose from. 
+
+Here are a couple of the more commonly used commands:
+
+- `pick -` use the commit
+
+- `reword -` use the commit, but edit the commit message
+
+- `edit -` use commit, but stop for amending
+
+- `fixup -` use commit contents but meld it into previous commit and discard the commit message
+
+- `drop -` remove commit
