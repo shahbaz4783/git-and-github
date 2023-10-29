@@ -55,3 +55,12 @@ folderName/
 Press `I` for insert mode
 Press `Escape` for escaping insert mode
 Write `:wq` to save changes
+
+
+## Configure default editor for git
+
+VS CODE
+
+```bash
+git config --global core.editor "code --wait"
+```
