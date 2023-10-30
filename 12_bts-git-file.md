@@ -59,6 +59,32 @@ echo 'my name is shahbaz' | git hash-object --stdin
 Rather than simply outputting the key that git would store our object under, we can use the `-w` option to tell git to actually write the object to the database.
 
 
+### Manuallay commiting
+
+```bash
+git hash-object app.js -w
+```
+
+> This will store app.js file content same as commit
+
+
 ```bash
 echo 'my name is shahbaz' | git hash-object --stdin -w
 ```
+
+### Retrieving data from hash
+
+
+Now that we have data stored in our Git object database, we can try retrieving it using the `git cat-file` command.   
+
+```bash
+git cat-file -p <object-hash>
+```
+
+For example;
+
+```bash
+git cat-file -p 95afa3bc45862b4090116d40ab70d8d6d5627bea95afa3bc45862b4090116d40ab70d8d6d5627bea
+```
+
+> We can provide min 4 to any lenght of hash
