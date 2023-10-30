@@ -88,3 +88,29 @@ git cat-file -p 95afa3bc45862b4090116d40ab70d8d6d5627bea95afa3bc45862b4090116d40
 ```
 
 > We can provide min 4 to any lenght of hash
+
+
+
+## Types of Git Objects
+
+
+### Blobs 
+
+Git blobs (binary large object) are the object type Git uses to store the contents of files in a given repository. Blobs don't even include the filenames of each file or any other data.  They just store the contents of a file!
+
+
+### Trees
+
+Trees are Git objects used to store the contents of a directory.  Each tree contains pointers that can refer to blobs and to other trees.  
+
+Each entry in a tree contains the SHA-1 hash of a blob or tree, as well as the mode, type, and filename
+
+#### Viewing Trees
+
+```bash
+git cat-file -p main^{tree}
+```
+
+### Commits
+
+Commit objects combine a tree object along with information about the context that led to the current tree.  Commits store a reference to parent commit(s), the author, the commiter, and of course the commit message!
