@@ -7,6 +7,9 @@ Git looks for the global config file at either  `~/.gitconfig` or `~/.config/git
 ```bash
 code ~/.gitconfig
 ```
+```bash
+git config --global --edit
+```
 
 After opening it, we can edit and create aliases in vs code.
 
