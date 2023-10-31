@@ -37,3 +37,45 @@ We can also view particular file:
 ```bash
 git reflog show app.js
 ```
+
+
+
+### Reflog References
+
+We can access specific git refs is name@{qualifier}.  We can use this syntax to access specific ref pointers and can pass them to other commands including checkout, reset, and merge.
+
+```bash
+git checkout HEAD@{4}
+```
+
+```bash
+git diff HEAD@{2} HEAD@{6} 
+```
+
+### Timed Reference
+
+Every entry in the reference logs has a timestamp associated with it.  We can filter reflogs entries by time/date by using time qualifiers like:
+
+```bash
+git reflog darktheme@{4.days.ago}
+```
+
+```bash
+git reflog main@{one.week.ago}
+```
+
+```bash
+git diff main@{0} main@{yesterday}
+```
+
+### Reflogs Rescue
+
+We can sometimes use reflog entries to access commits that seem lost and are not appearing in git log.
+
+```bash
+git reset --hard master@{2}
+```
+
+```bash
+git reset --hard <hash>
+```
